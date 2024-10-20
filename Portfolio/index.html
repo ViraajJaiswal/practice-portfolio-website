@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraaj Jaiswal</title>
+    <link rel="stylesheet" href="main/style.css">
+    <script src="https://kit.fontawesome.com/c7311a00a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav> 
+            <img src="main/images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">&ltHome&gt</a></li>
+                <li><a href="#about">&ltAbout&gt</a></li>
+                <li><a href="#services">&ltServices&gt</a></li>
+                <li><a href="#portfolio">&ltPortfolio&gt</a></li>
+                <li><a href="#contact">&ltContact&gt</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1><span id="hey">Hey, I'm</span><br><span id="name">Viraaj Jaiswal</span><span id="hey">.</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------about---------- -->   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">&ltAbout me&gt</h1>
+                    <p>
+                        I've been programming from a young age and
+                        have experience in languages such as java, HTML, CSS,
+                        and javascript. I have serious passion for UI effects, animations and creating intuitive, 
+                        dynamic user experiences. I'm also interested in fields such as 
+                        machine learning and plan to study them in the near future.
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">&ltSkills&gt</p>
+                            <p class="tab-links" onclick="opentab('education')">&ltEducation&gt</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>&ltUI/UX&gt</span><br>Designing Web/App Interfaces</li>
+                                <li><span>&ltWeb Development&gt</span><br>Building Websites</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>&ltPrimary Education&gt</span><br>South City International School, Kolkata</li>
+                                <li><span>&ltSecondary Education&gt</span><br>South City International School, Kolkata</li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="about-col-2">
+                    <img src="main/images/user.png">
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- ----------services---------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">&ltMy Services&gt</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>&ltWeb Design&gt</h2>
+                <p>A web designer is responsible for creating the 
+                    design and layout of a website or web pages. 
+                    It and can mean working on a brand new website 
+                    or updating an already existing site.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-uikit"></i>
+                <h2>&ltUI/UX Design&gt</h2>
+                <p>A UI/UX designer's job is to create 
+                    user-friendly interfaces that enable 
+                    users to understand how to use complex 
+                    technical products.</p>
+                    <a href="https://en.wikipedia.org/wiki/User_interface_design" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ----------portfolio---------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">&ltMy Work&gt</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="main/images/work-temp-image.png">
+                <div class="layer">
+                    <h3>Insert Name</h3>
+                    <p>
+                        Insert Description
+                        (image must be width: 650px, height: 800px)
+                    </p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="main/images/work-temp-image.png">
+                <div class="layer">
+                    <h3>Insert Name</h3>
+                    <p>
+                        Insert Description
+                        (image must be width: 650px, height: 800px)
+                    </p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="main/images/work-temp-image.png">
+                <div class="layer">
+                    <h3>Insert Name</h3>
+                    <p>
+                        Insert Description
+                        (image must be width: 650px, height: 800px)
+                    </p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ----------contact---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">&ltContact Me&gt</h1>
+                <p><i class="fa-regular fa-envelope"></i> viraajjaiswal1705@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (+91) 98304-04513</p>
+                <a href="main/images/CV.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form action="https://formsubmit.co/viraajjaiswal1705@gmail.com" method="POST">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="Submit" class="btn">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Viraaj Jaiswal</p>
+    </div>
+ </div>
+    <script src="main/script.js"></script>
+</body>
+</html>
